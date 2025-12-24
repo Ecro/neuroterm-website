@@ -3,22 +3,22 @@ export function HowItWorks() {
     {
       number: '1',
       title: 'Connect',
-      description: 'Open NeuroTerm, select your COM port',
+      description: 'Serial port or SSH server',
     },
     {
       number: '2',
-      title: 'Select',
-      description: 'Highlight the error log in terminal',
+      title: 'Type @',
+      description: 'Describe what you want to do',
     },
     {
       number: '3',
-      title: 'Ask AI',
-      description: 'Click the button or press shortcut',
+      title: 'Get Command',
+      description: 'AI suggests the right syntax',
     },
     {
       number: '4',
-      title: 'Get Answer',
-      description: 'Root cause + suggested fix',
+      title: 'Execute',
+      description: 'Insert with one click',
     },
   ];
 
@@ -27,7 +27,7 @@ export function HowItWorks() {
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-semibold text-white mb-4 tracking-tight">
-            From error to answer in seconds
+            From idea to command in seconds
           </h2>
         </div>
 
