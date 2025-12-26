@@ -24,22 +24,22 @@ export function Navigation() {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-1">
-            <Link href="/features" className="px-4 py-2 text-white/60 hover:text-white transition-colors text-sm">
+            <Link href="/features" className="px-4 py-2 text-zinc-400 hover:text-white hover:bg-white/5 rounded-lg transition-all duration-200 text-sm">
               Features
             </Link>
-            <Link href="/pricing" className="px-4 py-2 text-white/60 hover:text-white transition-colors text-sm">
+            <Link href="/pricing" className="px-4 py-2 text-zinc-400 hover:text-white hover:bg-white/5 rounded-lg transition-all duration-200 text-sm">
               Pricing
             </Link>
-            <Link href="/docs" className="px-4 py-2 text-white/60 hover:text-white transition-colors text-sm">
+            <Link href="/docs" className="px-4 py-2 text-zinc-400 hover:text-white hover:bg-white/5 rounded-lg transition-all duration-200 text-sm">
               Docs
             </Link>
-            <Link href="/support" className="px-4 py-2 text-white/60 hover:text-white transition-colors text-sm">
+            <Link href="/support" className="px-4 py-2 text-zinc-400 hover:text-white hover:bg-white/5 rounded-lg transition-all duration-200 text-sm">
               Support
             </Link>
             <div className="ml-4">
               <Link
                 href="/download"
-                className="px-4 py-2 bg-white text-black text-sm font-medium rounded-lg hover:bg-white/90 transition-colors"
+                className="px-4 py-2 text-sm btn-primary"
               >
                 Download
               </Link>
@@ -80,7 +80,7 @@ export function Navigation() {
               <div className="px-4 pt-4">
                 <Link
                   href="/download"
-                  className="block px-4 py-2 bg-white text-black text-sm font-medium rounded-lg text-center"
+                  className="block px-4 py-2 text-sm text-center btn-primary"
                 >
                   Download
                 </Link>

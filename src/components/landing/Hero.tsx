@@ -4,16 +4,21 @@ export function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background */}
-      <div className="absolute inset-0 bg-[#08090a]" />
-      <div className="absolute inset-0 grid-bg" />
+      <div className="absolute inset-0 bg-[#09090b]" />
+      <div className="absolute inset-0 grid-bg opacity-60" />
 
-      {/* Gradient orb */}
-      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-gradient-to-br from-cyan-500/20 via-transparent to-emerald-500/10 rounded-full blur-3xl" />
+      {/* Gradient orbs */}
+      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[800px] h-[800px] bg-gradient-to-br from-cyan-500/25 via-transparent to-emerald-500/15 rounded-full blur-3xl animate-pulse" style={{ animationDuration: '4s' }} />
+      <div className="absolute top-1/3 left-1/3 w-[400px] h-[400px] bg-gradient-to-tr from-emerald-500/20 to-transparent rounded-full blur-3xl" />
 
       <div className="relative z-10 max-w-4xl mx-auto px-6 text-center pt-24 pb-16">
         {/* Launch Badge */}
-        <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-emerald-500/30 bg-emerald-500/10 mb-8">
-          <span className="text-emerald-400 text-sm font-medium">50% off for the first 100 users</span>
+        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-emerald-500/40 bg-emerald-500/15 mb-8 shadow-lg shadow-emerald-500/10">
+          <span className="relative flex h-2 w-2">
+            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+            <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+          </span>
+          <span className="text-emerald-300 text-sm font-medium">50% off for the first 100 users</span>
         </div>
 
         {/* Headline */}
@@ -32,13 +37,13 @@ export function Hero() {
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-6">
           <Link
             href="/download"
-            className="px-8 py-3.5 bg-white text-black font-medium rounded-lg hover:bg-white/90 transition-colors"
+            className="px-8 py-3.5 btn-primary"
           >
             Download Free
           </Link>
           <Link
             href="/pricing"
-            className="px-8 py-3.5 bg-emerald-500 text-black font-medium rounded-lg hover:bg-emerald-400 transition-colors"
+            className="px-8 py-3.5 btn-accent"
           >
             Buy Pro — $19
           </Link>
@@ -50,11 +55,12 @@ export function Hero() {
         </p>
 
         {/* Terminal Preview */}
-        <div className="mt-16 relative max-w-3xl mx-auto">
-          <div className="absolute -inset-px bg-gradient-to-b from-white/10 to-transparent rounded-xl" />
-          <div className="relative glass rounded-xl overflow-hidden glow">
+        <div className="mt-16 relative max-w-3xl mx-auto group">
+          <div className="absolute -inset-1 bg-gradient-to-r from-cyan-500/20 via-emerald-500/20 to-cyan-500/20 rounded-2xl blur-lg opacity-60 group-hover:opacity-100 transition-opacity duration-500" />
+          <div className="absolute -inset-px bg-gradient-to-b from-white/15 to-white/5 rounded-xl" />
+          <div className="relative bg-zinc-900/95 backdrop-blur-xl rounded-xl overflow-hidden border border-white/10">
             {/* Terminal Header */}
-            <div className="flex items-center gap-2 px-4 py-3 border-b border-white/5">
+            <div className="flex items-center gap-2 px-4 py-3 border-b border-white/10">
               <div className="flex gap-1.5">
                 <div className="w-2.5 h-2.5 rounded-full bg-red-500/60" />
                 <div className="w-2.5 h-2.5 rounded-full bg-yellow-500/60" />
@@ -70,7 +76,7 @@ export function Hero() {
                 <span className="text-cyan-400">@</span>
                 <span className="text-white/80">&quot;turn on the status LED&quot;</span>
               </div>
-              <div className="mt-3 p-3 rounded-lg bg-white/5 border border-emerald-500/20">
+              <div className="mt-3 p-3 rounded-lg bg-white/[0.06] border border-emerald-500/30">
                 <div className="text-emerald-400 text-xs mb-2 flex items-center gap-1.5">
                   <svg className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09z" />
@@ -86,9 +92,9 @@ export function Hero() {
                 </div>
               </div>
               <div className="mt-3 flex items-center gap-2 text-xs">
-                <span className="px-2 py-1 rounded bg-white/10 text-white/60">↵ Insert</span>
-                <span className="px-2 py-1 rounded bg-white/5 text-white/40">Copy</span>
-                <span className="px-2 py-1 rounded bg-white/5 text-white/40">Edit</span>
+                <span className="px-2 py-1 rounded bg-white/12 text-white/70 border border-white/10">↵ Insert</span>
+                <span className="px-2 py-1 rounded bg-white/[0.06] text-white/50">Copy</span>
+                <span className="px-2 py-1 rounded bg-white/[0.06] text-white/50">Edit</span>
               </div>
             </div>
           </div>

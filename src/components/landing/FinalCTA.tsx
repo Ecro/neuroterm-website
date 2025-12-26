@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export function FinalCTA() {
   return (
-    <section className="py-24 border-t border-white/5">
+    <section className="py-24 border-t border-white/8">
       <div className="max-w-2xl mx-auto px-6 text-center">
         <h2 className="text-3xl md:text-4xl font-semibold text-white mb-4 tracking-tight">
           Ready to get started?
@@ -12,7 +12,7 @@ export function FinalCTA() {
         </p>
         <Link
           href="/download"
-          className="inline-flex items-center gap-2 px-6 py-3 bg-white text-black font-medium rounded-lg hover:bg-white/90 transition-colors"
+          className="inline-flex items-center gap-2 px-6 py-3 btn-primary"
         >
           Download for Windows
           <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">

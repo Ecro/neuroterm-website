@@ -48,7 +48,7 @@ export default function DocsPage() {
           <h1 className="text-4xl md:text-5xl font-semibold text-white mb-4 tracking-tight">
             Documentation
           </h1>
-          <p className="text-white/50 text-lg">
+          <p className="text-zinc-400 text-lg">
             Everything you need to get started with NeuroTerm.
           </p>
         </div>
@@ -56,15 +56,15 @@ export default function DocsPage() {
         {/* Quick Start Banner */}
         <Link
           href="/docs/quickstart"
-          className="block p-6 rounded-xl border border-emerald-500/20 bg-emerald-500/5 hover:bg-emerald-500/10 transition-colors mb-12 group"
+          className="block p-6 rounded-xl border border-emerald-500/30 bg-emerald-500/10 hover:bg-emerald-500/15 hover:-translate-y-1 hover:shadow-xl hover:shadow-emerald-500/10 transition-all duration-200 mb-12 group"
         >
           <div className="flex items-center justify-between">
             <div>
               <div className="text-emerald-400 text-sm font-medium mb-1">Recommended</div>
-              <div className="text-xl font-medium text-white">Quickstart Guide</div>
-              <div className="text-white/50 text-sm mt-1">Connect to your first device in 5 minutes</div>
+              <div className="text-xl font-semibold text-white">Quickstart Guide</div>
+              <div className="text-zinc-400 text-sm mt-1">Connect to your first device in 5 minutes</div>
             </div>
-            <svg className="w-6 h-6 text-white/30 group-hover:text-white/60 transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+            <svg className="w-6 h-6 text-emerald-500/50 group-hover:text-emerald-400 group-hover:translate-x-1 transition-all" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
               <path strokeLinecap="round" strokeLinejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
             </svg>
           </div>
@@ -74,22 +74,22 @@ export default function DocsPage() {
         <div className="space-y-12">
           {sections.map((section) => (
             <div key={section.title}>
-              <h2 className="text-lg font-medium text-white mb-4">{section.title}</h2>
+              <h2 className="text-lg font-semibold text-white mb-4">{section.title}</h2>
               <div className="grid gap-4">
                 {section.items.map((item) => (
                   <Link
                     key={item.href}
                     href={item.href}
-                    className="block p-5 rounded-xl border border-white/5 bg-white/[0.02] hover:bg-white/[0.05] hover:border-white/10 transition-all group"
+                    className="card-interactive p-5 group"
                   >
                     <div className="flex items-center justify-between">
                       <div>
-                        <div className="font-medium text-white group-hover:text-emerald-400 transition-colors">
+                        <div className="font-medium text-white group-hover:text-emerald-300 transition-colors">
                           {item.title}
                         </div>
-                        <div className="text-white/40 text-sm mt-0.5">{item.description}</div>
+                        <div className="text-zinc-500 text-sm mt-0.5">{item.description}</div>
                       </div>
-                      <svg className="w-5 h-5 text-white/20 group-hover:text-white/40 transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                      <svg className="w-5 h-5 text-zinc-600 group-hover:text-zinc-400 group-hover:translate-x-1 transition-all" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
                         <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
                       </svg>
                     </div>

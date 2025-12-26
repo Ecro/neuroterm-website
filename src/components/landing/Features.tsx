@@ -57,7 +57,7 @@ export function Features() {
   ];
 
   return (
-    <section className="py-24 bg-[#08090a]">
+    <section className="py-24 bg-[#0c0d10]">
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-semibold text-white mb-4 tracking-tight">
@@ -69,15 +69,17 @@ export function Features() {
           {features.map((feature) => (
             <div
               key={feature.title}
-              className="group p-6 rounded-xl border border-white/5 bg-white/[0.02] hover:bg-white/[0.04] hover:border-white/10 transition-all"
+              className="group p-6 rounded-xl border border-white/10 bg-zinc-900/70 backdrop-blur-sm
+                hover:bg-zinc-800/90 hover:border-emerald-500/30 hover:-translate-y-2
+                hover:shadow-2xl hover:shadow-emerald-500/10 transition-all duration-300 cursor-pointer"
             >
-              <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-cyan-500/10 to-emerald-500/10 border border-white/5 flex items-center justify-center text-white/60 mb-4 group-hover:text-cyan-400 transition-colors">
+              <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-cyan-500/20 to-emerald-500/20 border border-white/10 flex items-center justify-center text-white/80 mb-5 group-hover:text-cyan-400 group-hover:border-cyan-500/40 group-hover:scale-110 group-hover:shadow-lg group-hover:shadow-cyan-500/20 transition-all duration-300">
                 {feature.icon}
               </div>
-              <h3 className="text-lg font-medium text-white mb-2">
+              <h3 className="text-lg font-semibold text-white mb-2 group-hover:text-emerald-300 transition-colors">
                 {feature.title}
               </h3>
-              <p className="text-white/50 text-sm leading-relaxed">
+              <p className="text-zinc-400 text-sm leading-relaxed group-hover:text-zinc-300 transition-colors">
                 {feature.description}
               </p>
             </div>

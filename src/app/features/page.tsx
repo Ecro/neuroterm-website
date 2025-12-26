@@ -136,9 +136,9 @@ export default function FeaturesPage() {
         {/* Header */}
         <div className="text-center mb-20">
           <h1 className="text-4xl md:text-5xl font-semibold text-white mb-4 tracking-tight">
-            Everything you need. Nothing you don't.
+            Everything you need. Nothing you don&apos;t.
           </h1>
-          <p className="text-white/50 text-lg max-w-2xl mx-auto">
+          <p className="text-zinc-400 text-lg max-w-2xl mx-auto">
             Professional-grade features for embedded Linux, MCU, and IoT development.
             All powered by local AI.
           </p>
@@ -149,23 +149,23 @@ export default function FeaturesPage() {
           {features.map((feature) => (
             <div
               key={feature.title}
-              className="p-6 rounded-2xl border border-white/5 bg-white/[0.02] hover:bg-white/[0.04] transition-colors group"
+              className="card-feature group"
             >
-              <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-cyan-500/10 to-emerald-500/10 border border-white/5 flex items-center justify-center text-cyan-400 mb-5 group-hover:from-cyan-500/20 group-hover:to-emerald-500/20 transition-colors">
+              <div className="icon-box mb-5">
                 {feature.icon}
               </div>
 
-              <h3 className="text-lg font-medium text-white mb-2">
+              <h3 className="text-lg font-semibold text-white mb-2 group-hover:text-emerald-300 transition-colors">
                 {feature.title}
               </h3>
 
-              <p className="text-white/40 text-sm mb-5 leading-relaxed">
+              <p className="text-zinc-500 text-sm mb-5 leading-relaxed">
                 {feature.description}
               </p>
 
               <ul className="space-y-2">
                 {feature.details.map((detail) => (
-                  <li key={detail} className="flex items-center gap-2 text-white/50 text-sm">
+                  <li key={detail} className="flex items-center gap-2 text-zinc-400 text-sm">
                     <svg className="w-4 h-4 text-emerald-400 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
                       <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                     </svg>
@@ -184,30 +184,30 @@ export default function FeaturesPage() {
           </h2>
 
           <div className="grid md:grid-cols-2 gap-6 max-w-xl mx-auto">
-            <div className="p-6 rounded-xl border border-white/5 bg-white/[0.02]">
+            <div className="card p-6">
               <div className="flex items-center gap-3 mb-3">
-                <div className="w-10 h-10 rounded-lg bg-white/5 flex items-center justify-center text-white/40">
+                <div className="w-10 h-10 rounded-lg bg-zinc-800 border border-white/10 flex items-center justify-center text-zinc-400">
                   <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z" />
                   </svg>
                 </div>
                 <h3 className="text-white font-medium">Team Collaboration</h3>
               </div>
-              <p className="text-white/40 text-sm">
+              <p className="text-zinc-500 text-sm">
                 Share connection profiles, macros, and settings with your team. Sync across devices.
               </p>
             </div>
 
-            <div className="p-6 rounded-xl border border-white/5 bg-white/[0.02]">
+            <div className="card p-6">
               <div className="flex items-center gap-3 mb-3">
-                <div className="w-10 h-10 rounded-lg bg-white/5 flex items-center justify-center text-white/40">
+                <div className="w-10 h-10 rounded-lg bg-zinc-800 border border-white/10 flex items-center justify-center text-zinc-400">
                   <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0115 18.257V17.25m6-12V15a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 15V5.25m18 0A2.25 2.25 0 0018.75 3H5.25A2.25 2.25 0 003 5.25m18 0V12a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 12V5.25" />
                   </svg>
                 </div>
                 <h3 className="text-white font-medium">macOS & Linux</h3>
               </div>
-              <p className="text-white/40 text-sm">
+              <p className="text-zinc-500 text-sm">
                 Cross-platform support is on the roadmap. Windows 10/11 only for now.
               </p>
             </div>
@@ -219,13 +219,13 @@ export default function FeaturesPage() {
           <h2 className="text-2xl font-semibold text-white mb-4">
             Ready to try it?
           </h2>
-          <p className="text-white/50 mb-8">
+          <p className="text-zinc-400 mb-8">
             Free tier available. Windows 10/11 required.
           </p>
           <div className="flex items-center justify-center gap-4">
             <Link
               href="/download"
-              className="inline-flex items-center gap-2 px-6 py-3 bg-white text-black font-medium rounded-lg hover:bg-white/90 transition-colors"
+              className="inline-flex items-center gap-2 px-6 py-3 btn-primary"
             >
               Download for Windows
               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
@@ -234,7 +234,7 @@ export default function FeaturesPage() {
             </Link>
             <Link
               href="/pricing"
-              className="inline-flex items-center gap-2 px-6 py-3 text-white/70 border border-white/10 rounded-lg hover:bg-white/5 transition-colors"
+              className="inline-flex items-center gap-2 px-6 py-3 btn-ghost"
             >
               View pricing
             </Link>
