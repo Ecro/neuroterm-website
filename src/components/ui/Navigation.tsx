@@ -33,6 +33,9 @@ export function Navigation() {
             <Link href="/docs" className="px-4 py-2 text-white/60 hover:text-white transition-colors text-sm">
               Docs
             </Link>
+            <Link href="/support" className="px-4 py-2 text-white/60 hover:text-white transition-colors text-sm">
+              Support
+            </Link>
             <div className="ml-4">
               <Link
                 href="/download"
@@ -70,6 +73,9 @@ export function Navigation() {
               </Link>
               <Link href="/docs" className="px-4 py-3 text-white/60 hover:text-white text-sm">
                 Docs
+              </Link>
+              <Link href="/support" className="px-4 py-3 text-white/60 hover:text-white text-sm">
+                Support
               </Link>
               <div className="px-4 pt-4">
                 <Link

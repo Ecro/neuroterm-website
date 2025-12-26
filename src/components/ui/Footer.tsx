@@ -24,14 +24,6 @@ export function Footer() {
             <Link href="/support" className="text-white/40 hover:text-white transition-colors">
               Support
             </Link>
-            <a
-              href="https://github.com/Ecro/neuroterm-issues"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-white/40 hover:text-white transition-colors"
-            >
-              Feedback
-            </a>
           </div>
         </div>
       </div>

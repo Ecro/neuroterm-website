@@ -174,17 +174,25 @@ export default function TroubleshootingPage() {
 
         {/* Still stuck */}
         <section className="mb-12">
-          <div className="p-4 rounded-lg bg-cyan-500/10 border border-cyan-500/20">
-            <div className="flex items-start gap-2">
-              <svg className="w-5 h-5 text-cyan-400 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+          <div className="p-5 rounded-xl bg-gradient-to-br from-cyan-500/10 to-emerald-500/10 border border-cyan-500/20">
+            <div className="flex items-start gap-3">
+              <svg className="w-6 h-6 text-cyan-400 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
-              <div className="text-sm">
-                <p className="text-cyan-200 font-medium">Still stuck?</p>
-                <p className="text-white/60 mt-1">
-                  Email us at <a href="mailto:support@neuroterm.dev" className="text-cyan-400 hover:underline">support@neuroterm.dev</a> with
-                  details about your issue and we&apos;ll help you out.
+              <div>
+                <p className="text-white font-medium">Still stuck?</p>
+                <p className="text-white/60 text-sm mt-1 mb-3">
+                  Report a bug, request a feature, or contact us directly.
                 </p>
+                <Link
+                  href="/support"
+                  className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 text-white text-sm font-medium rounded-lg hover:bg-white/20 transition-colors"
+                >
+                  Get Support
+                  <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                  </svg>
+                </Link>
               </div>
             </div>
           </div>
