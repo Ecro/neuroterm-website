@@ -18,6 +18,10 @@ export const metadata: Metadata = {
   title: 'NeuroTerm - AI-Powered Serial & SSH Terminal',
   description: 'The terminal that understands you. Describe what you want, AI gives you the command. Serial, SSH, SFTP. 100% offline.',
   keywords: ['serial terminal', 'SSH terminal', 'SFTP', 'embedded Linux', 'MCU debugging', 'Ollama', 'Windows', 'Tauri', 'embedded development', 'IoT'],
+  icons: {
+    icon: '/favicon.svg',
+    apple: '/logo.svg',
+  },
   openGraph: {
     title: 'NeuroTerm - AI-Powered Serial & SSH Terminal',
     description: 'The terminal that understands you. Describe what you want, AI gives you the command. 100% offline.',

@@ -5,7 +5,8 @@ export function Footer() {
     <footer className="section-divider">
       <div className="max-w-6xl mx-auto px-6 py-8">
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-          <div className="text-zinc-500 text-sm">
+          <div className="flex items-center gap-2 text-zinc-500 text-sm">
+            <img src="/logo.svg" alt="NeuroTerm" className="w-5 h-5" />
             <span className="text-zinc-300 font-medium">NeuroTerm</span>
             <span className="mx-2">·</span>
             Built for embedded developers
