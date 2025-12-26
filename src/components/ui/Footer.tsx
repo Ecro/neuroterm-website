@@ -21,13 +21,16 @@ export function Footer() {
             <Link href="/docs" className="text-white/40 hover:text-white transition-colors">
               Docs
             </Link>
+            <Link href="/support" className="text-white/40 hover:text-white transition-colors">
+              Support
+            </Link>
             <a
-              href="https://twitter.com/neuroterm"
+              href="https://github.com/Ecro/neuroterm-issues"
               target="_blank"
               rel="noopener noreferrer"
               className="text-white/40 hover:text-white transition-colors"
             >
-              Twitter
+              Feedback
             </a>
           </div>
         </div>
