@@ -30,8 +30,8 @@ export default function ShortcutsPage() {
         {/* Global Shortcuts */}
         <section className="mb-12">
           <h2 className="text-xl font-medium text-white mb-4">Global</h2>
-          <div className="rounded-xl border border-white/5 bg-white/[0.02] overflow-hidden">
-            <table className="w-full text-sm">
+          <div className="rounded-xl border border-white/5 bg-white/[0.02] overflow-x-auto">
+            <table className="w-full text-sm min-w-[400px]">
               <thead>
                 <tr className="border-b border-white/5">
                   <th className="text-left p-4 text-white/50 font-normal w-1/3">Shortcut</th>
@@ -95,8 +95,8 @@ export default function ShortcutsPage() {
         {/* Terminal Shortcuts */}
         <section className="mb-12">
           <h2 className="text-xl font-medium text-white mb-4">Terminal</h2>
-          <div className="rounded-xl border border-white/5 bg-white/[0.02] overflow-hidden">
-            <table className="w-full text-sm">
+          <div className="rounded-xl border border-white/5 bg-white/[0.02] overflow-x-auto">
+            <table className="w-full text-sm min-w-[400px]">
               <thead>
                 <tr className="border-b border-white/5">
                   <th className="text-left p-4 text-white/50 font-normal w-1/3">Shortcut</th>
@@ -180,8 +180,8 @@ export default function ShortcutsPage() {
         {/* Magic Input Shortcuts */}
         <section className="mb-12">
           <h2 className="text-xl font-medium text-white mb-4">Magic Input</h2>
-          <div className="rounded-xl border border-white/5 bg-white/[0.02] overflow-hidden">
-            <table className="w-full text-sm">
+          <div className="rounded-xl border border-white/5 bg-white/[0.02] overflow-x-auto">
+            <table className="w-full text-sm min-w-[400px]">
               <thead>
                 <tr className="border-b border-white/5">
                   <th className="text-left p-4 text-white/50 font-normal w-1/3">Shortcut</th>
@@ -221,8 +221,8 @@ export default function ShortcutsPage() {
         {/* Connection Shortcuts */}
         <section className="mb-12">
           <h2 className="text-xl font-medium text-white mb-4">Connection</h2>
-          <div className="rounded-xl border border-white/5 bg-white/[0.02] overflow-hidden">
-            <table className="w-full text-sm">
+          <div className="rounded-xl border border-white/5 bg-white/[0.02] overflow-x-auto">
+            <table className="w-full text-sm min-w-[400px]">
               <thead>
                 <tr className="border-b border-white/5">
                   <th className="text-left p-4 text-white/50 font-normal w-1/3">Shortcut</th>
@@ -262,8 +262,8 @@ export default function ShortcutsPage() {
         {/* Panel Shortcuts */}
         <section className="mb-12">
           <h2 className="text-xl font-medium text-white mb-4">Panels</h2>
-          <div className="rounded-xl border border-white/5 bg-white/[0.02] overflow-hidden">
-            <table className="w-full text-sm">
+          <div className="rounded-xl border border-white/5 bg-white/[0.02] overflow-x-auto">
+            <table className="w-full text-sm min-w-[400px]">
               <thead>
                 <tr className="border-b border-white/5">
                   <th className="text-left p-4 text-white/50 font-normal w-1/3">Shortcut</th>
