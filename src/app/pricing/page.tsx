@@ -44,7 +44,7 @@ export default function PricingPage() {
             </thead>
             <tbody className="text-sm">
               <tr className="border-b border-white/5">
-                <td className="p-5 text-white/60">Terminal sessions</td>
+                <td className="p-5 text-white/60">Active connections</td>
                 <td className="p-5 text-center text-white/80">1</td>
                 <td className="p-5 text-center text-white/80 bg-emerald-500/5">Unlimited</td>
               </tr>
@@ -59,7 +59,7 @@ export default function PricingPage() {
                 <td className="p-5 text-center text-white/80 bg-emerald-500/5">Unlimited</td>
               </tr>
               <tr className="border-b border-white/5">
-                <td className="p-5 text-white/60">Session Profiles</td>
+                <td className="p-5 text-white/60">Saved profiles</td>
                 <td className="p-5 text-center text-white/80">3</td>
                 <td className="p-5 text-center text-white/80 bg-emerald-500/5">Unlimited</td>
               </tr>
