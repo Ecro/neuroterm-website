@@ -1,0 +1,105 @@
+import Link from 'next/link';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Documentation - NeuroTerm',
+  description: 'Learn how to use NeuroTerm. Installation, Ollama setup, Magic Input, and more.',
+};
+
+const sections = [
+  {
+    title: 'Getting Started',
+    items: [
+      { title: 'Installation', href: '/docs/installation', description: 'Download and install NeuroTerm' },
+      { title: 'Ollama Setup', href: '/docs/ollama-setup', description: 'Set up local AI for Magic Input' },
+      { title: 'Quickstart', href: '/docs/quickstart', description: 'Your first connection in 5 minutes' },
+    ],
+  },
+  {
+    title: 'Connections',
+    items: [
+      { title: 'Serial Port', href: '/docs/serial', description: 'Connect to hardware via COM ports' },
+      { title: 'SSH Terminal', href: '/docs/ssh', description: 'Secure shell to remote servers' },
+      { title: 'SFTP', href: '/docs/sftp', description: 'Transfer files over SSH' },
+    ],
+  },
+  {
+    title: 'AI Features',
+    items: [
+      { title: 'Magic Input', href: '/docs/magic-input', description: 'Natural language to commands' },
+      { title: 'Local RAG', href: '/docs/local-rag', description: 'Import datasheets for context' },
+    ],
+  },
+  {
+    title: 'Reference',
+    items: [
+      { title: 'Keyboard Shortcuts', href: '/docs/shortcuts', description: 'All hotkeys and shortcuts' },
+      { title: 'Troubleshooting', href: '/docs/troubleshooting', description: 'Common issues and fixes' },
+    ],
+  },
+];
+
+export default function DocsPage() {
+  return (
+    <div className="min-h-screen pt-24 pb-16">
+      <div className="max-w-4xl mx-auto px-6">
+        {/* Header */}
+        <div className="mb-12">
+          <h1 className="text-4xl md:text-5xl font-semibold text-white mb-4 tracking-tight">
+            Documentation
+          </h1>
+          <p className="text-white/50 text-lg">
+            Everything you need to get started with NeuroTerm.
+          </p>
+        </div>
+
+        {/* Quick Start Banner */}
+        <Link
+          href="/docs/quickstart"
+          className="block p-6 rounded-xl border border-emerald-500/20 bg-emerald-500/5 hover:bg-emerald-500/10 transition-colors mb-12 group"
+        >
+          <div className="flex items-center justify-between">
+            <div>
+              <div className="text-emerald-400 text-sm font-medium mb-1">Recommended</div>
+              <div className="text-xl font-medium text-white">Quickstart Guide</div>
+              <div className="text-white/50 text-sm mt-1">Connect to your first device in 5 minutes</div>
+            </div>
+            <svg className="w-6 h-6 text-white/30 group-hover:text-white/60 transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </div>
+        </Link>
+
+        {/* Sections */}
+        <div className="space-y-12">
+          {sections.map((section) => (
+            <div key={section.title}>
+              <h2 className="text-lg font-medium text-white mb-4">{section.title}</h2>
+              <div className="grid gap-4">
+                {section.items.map((item) => (
+                  <Link
+                    key={item.href}
+                    href={item.href}
+                    className="block p-5 rounded-xl border border-white/5 bg-white/[0.02] hover:bg-white/[0.05] hover:border-white/10 transition-all group"
+                  >
+                    <div className="flex items-center justify-between">
+                      <div>
+                        <div className="font-medium text-white group-hover:text-emerald-400 transition-colors">
+                          {item.title}
+                        </div>
+                        <div className="text-white/40 text-sm mt-0.5">{item.description}</div>
+                      </div>
+                      <svg className="w-5 h-5 text-white/20 group-hover:text-white/40 transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+                      </svg>
+                    </div>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}
