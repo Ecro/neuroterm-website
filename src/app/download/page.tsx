@@ -22,11 +22,7 @@ export default function DownloadPage() {
         {/* Download Card */}
         <div className="card p-8 mb-8">
           <div className="flex items-center gap-4 mb-6">
-            <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-cyan-400 to-emerald-400 flex items-center justify-center shadow-lg shadow-cyan-500/20">
-              <svg className="w-7 h-7 text-black" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
-                <path d="M4 17l6-6-6-6M12 19h8" strokeLinecap="round" strokeLinejoin="round"/>
-              </svg>
-            </div>
+            <img src="/logo.svg" alt="NeuroTerm" className="w-14 h-14" />
             <div>
               <h2 className="text-xl font-semibold text-white">NeuroTerm for Windows</h2>
               <p className="text-zinc-500 text-sm">Version 2.1.0</p>
