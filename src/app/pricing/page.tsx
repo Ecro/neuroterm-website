@@ -48,23 +48,18 @@ export default function PricingPage() {
             </thead>
             <tbody className="text-sm">
               <tr className="table-row">
-                <td className="p-5 text-zinc-300">Active connections</td>
-                <td className="p-5 text-center text-zinc-400">1</td>
-                <td className="p-5 text-center text-white font-medium bg-emerald-500/8">Unlimited</td>
-              </tr>
-              <tr className="table-row">
                 <td className="p-5 text-zinc-300">Ask AI</td>
-                <td className="p-5 text-center text-zinc-400">10/day</td>
+                <td className="p-5 text-center text-zinc-400">20/day</td>
                 <td className="p-5 text-center text-white font-medium bg-emerald-500/8">Unlimited</td>
               </tr>
               <tr className="table-row">
                 <td className="p-5 text-zinc-300">RAG documents</td>
-                <td className="p-5 text-center text-zinc-400">1 file</td>
+                <td className="p-5 text-center text-zinc-400">2 files</td>
                 <td className="p-5 text-center text-white font-medium bg-emerald-500/8">Unlimited</td>
               </tr>
               <tr className="table-row">
-                <td className="p-5 text-zinc-300">Saved profiles</td>
-                <td className="p-5 text-center text-zinc-400">3</td>
+                <td className="p-5 text-zinc-300">Saved connections</td>
+                <td className="p-5 text-center text-zinc-400">2</td>
                 <td className="p-5 text-center text-white font-medium bg-emerald-500/8">Unlimited</td>
               </tr>
               <tr className="table-row">
@@ -82,16 +77,24 @@ export default function PricingPage() {
               </tr>
               <tr className="table-row">
                 <td className="p-5 text-zinc-300">Log Export</td>
-                <td className="p-5 text-center text-zinc-600">—</td>
+                <td className="p-5 text-center text-emerald-400">
+                  <svg className="w-5 h-5 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                  </svg>
+                </td>
                 <td className="p-5 text-center text-emerald-400 bg-emerald-500/8">
                   <svg className="w-5 h-5 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                   </svg>
                 </td>
               </tr>
-              <tr className="hover:bg-white/[0.02] transition-colors">
+              <tr className="table-row">
                 <td className="p-5 text-zinc-300">Share Transform</td>
-                <td className="p-5 text-center text-zinc-600">—</td>
+                <td className="p-5 text-center text-emerald-400">
+                  <svg className="w-5 h-5 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                  </svg>
+                </td>
                 <td className="p-5 text-center text-emerald-400 bg-emerald-500/8">
                   <svg className="w-5 h-5 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
@@ -139,14 +142,7 @@ export default function PricingPage() {
             <div className="card p-5">
               <h3 className="text-white font-medium mb-2">Does it work offline?</h3>
               <p className="text-zinc-400 text-sm leading-relaxed">
-                100%. All AI runs locally on your machine. No internet required.
-              </p>
-            </div>
-
-            <div className="card p-5">
-              <h3 className="text-white font-medium mb-2">What models are supported?</h3>
-              <p className="text-zinc-400 text-sm leading-relaxed">
-                Any model available in Ollama — Llama3, Qwen, Mistral, and more.
+                100%. All AI runs locally on your machine. No internet required after initial setup.
               </p>
             </div>
 
@@ -161,27 +157,6 @@ export default function PricingPage() {
               <h3 className="text-white font-medium mb-2">Windows only?</h3>
               <p className="text-zinc-400 text-sm leading-relaxed">
                 For now, yes. macOS and Linux are on the roadmap.
-              </p>
-            </div>
-
-            <div className="card p-5">
-              <h3 className="text-white font-medium mb-2">How fast is the AI?</h3>
-              <p className="text-zinc-400 text-sm leading-relaxed">
-                Streaming responses start instantly. GPU-accelerated terminal handles any baud rate smoothly.
-              </p>
-            </div>
-
-            <div className="card p-5">
-              <h3 className="text-white font-medium mb-2">Can I use it air-gapped?</h3>
-              <p className="text-zinc-400 text-sm leading-relaxed">
-                Yes. Ollama runs 100% locally. No internet required after initial setup.
-              </p>
-            </div>
-
-            <div className="card p-5">
-              <h3 className="text-white font-medium mb-2">Does SSH support key authentication?</h3>
-              <p className="text-zinc-400 text-sm leading-relaxed">
-                Yes. Both password and SSH key authentication are supported, with known hosts verification.
               </p>
             </div>
           </div>
