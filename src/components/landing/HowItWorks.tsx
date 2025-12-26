@@ -3,22 +3,17 @@ export function HowItWorks() {
     {
       number: '1',
       title: 'Connect',
-      description: 'Serial port or SSH server',
+      description: 'Pick your port. One click.',
     },
     {
       number: '2',
-      title: 'Type @',
-      description: 'Describe what you want to do',
+      title: 'Ask',
+      description: 'Type @ + what you want.',
     },
     {
       number: '3',
-      title: 'Get Command',
-      description: 'AI suggests the right syntax',
-    },
-    {
-      number: '4',
-      title: 'Execute',
-      description: 'Insert with one click',
+      title: 'Done',
+      description: 'Insert. Execute. Debug.',
     },
   ];
 
@@ -31,7 +26,7 @@ export function HowItWorks() {
           </h2>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
+        <div className="grid grid-cols-3 gap-6 md:gap-12 max-w-2xl mx-auto">
           {steps.map((step, index) => (
             <div key={step.number} className="relative text-center">
               {/* Connector line */}

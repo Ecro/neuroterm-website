@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Features - NeuroTerm',
-  description: 'GPU-accelerated serial terminal with local Ollama, RAG knowledge base, and native serial access for Windows.',
+  description: 'AI-powered serial & SSH terminal with SFTP, local RAG, pattern highlighting. Debug embedded Linux, MCU, IoT faster. 100% offline.',
 };
 
 const features = [
@@ -12,7 +12,7 @@ const features = [
     description: 'Type natural language, get terminal commands. Powered by your local Ollama LLM for complete privacy.',
     details: [
       'Natural language to command translation',
-      'Streaming responses (~200ms to first token)',
+      'Streaming responses in real-time',
       'Works with any Ollama model',
       'Zero data leaves your machine',
     ],
@@ -97,6 +97,36 @@ const features = [
       </svg>
     ),
   },
+  {
+    title: 'SSH Terminal',
+    description: 'Secure shell access to remote servers with full PTY support.',
+    details: [
+      'Password and SSH key auth',
+      'Known hosts verification',
+      'Terminal resize support',
+      'Integrated with SFTP',
+    ],
+    icon: (
+      <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M6.75 7.5l3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0021 18V6a2.25 2.25 0 00-2.25-2.25H5.25A2.25 2.25 0 003 6v12a2.25 2.25 0 002.25 2.25z" />
+      </svg>
+    ),
+  },
+  {
+    title: 'SFTP File Browser',
+    description: 'Browse, upload, and download files over SSH connections.',
+    details: [
+      'Directory browsing',
+      'Upload/download with progress',
+      'Create, rename, delete files',
+      '64KB chunk transfers',
+    ],
+    icon: (
+      <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5m-13.5-9L12 3m0 0l4.5 4.5M12 3v13.5" />
+      </svg>
+    ),
+  },
 ];
 
 export default function FeaturesPage() {
@@ -106,11 +136,11 @@ export default function FeaturesPage() {
         {/* Header */}
         <div className="text-center mb-20">
           <h1 className="text-4xl md:text-5xl font-semibold text-white mb-4 tracking-tight">
-            Everything you need for serial development
+            Everything you need. Nothing you don't.
           </h1>
           <p className="text-white/50 text-lg max-w-2xl mx-auto">
-            Professional-grade features designed for embedded developers,
-            hardware engineers, and IoT professionals.
+            Professional-grade features for embedded Linux, MCU, and IoT development.
+            All powered by local AI.
           </p>
         </div>
 
@@ -153,21 +183,7 @@ export default function FeaturesPage() {
             Coming soon
           </h2>
 
-          <div className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto">
-            <div className="p-6 rounded-xl border border-white/5 bg-white/[0.02]">
-              <div className="flex items-center gap-3 mb-3">
-                <div className="w-10 h-10 rounded-lg bg-white/5 flex items-center justify-center text-white/40">
-                  <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M6.75 7.5l3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0021 18V6a2.25 2.25 0 00-2.25-2.25H5.25A2.25 2.25 0 003 6v12a2.25 2.25 0 002.25 2.25z" />
-                  </svg>
-                </div>
-                <h3 className="text-white font-medium">SSH/Telnet</h3>
-              </div>
-              <p className="text-white/40 text-sm">
-                Connect to remote servers directly from your browser with secure SSH and Telnet support.
-              </p>
-            </div>
-
+          <div className="grid md:grid-cols-2 gap-6 max-w-xl mx-auto">
             <div className="p-6 rounded-xl border border-white/5 bg-white/[0.02]">
               <div className="flex items-center gap-3 mb-3">
                 <div className="w-10 h-10 rounded-lg bg-white/5 flex items-center justify-center text-white/40">
@@ -179,6 +195,20 @@ export default function FeaturesPage() {
               </div>
               <p className="text-white/40 text-sm">
                 Share connection profiles, macros, and settings with your team. Sync across devices.
+              </p>
+            </div>
+
+            <div className="p-6 rounded-xl border border-white/5 bg-white/[0.02]">
+              <div className="flex items-center gap-3 mb-3">
+                <div className="w-10 h-10 rounded-lg bg-white/5 flex items-center justify-center text-white/40">
+                  <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0115 18.257V17.25m6-12V15a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 15V5.25m18 0A2.25 2.25 0 0018.75 3H5.25A2.25 2.25 0 003 5.25m18 0V12a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 12V5.25" />
+                  </svg>
+                </div>
+                <h3 className="text-white font-medium">macOS & Linux</h3>
+              </div>
+              <p className="text-white/40 text-sm">
+                Cross-platform support is on the roadmap. Windows 10/11 only for now.
               </p>
             </div>
           </div>

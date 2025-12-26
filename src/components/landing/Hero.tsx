@@ -18,14 +18,14 @@ export function Hero() {
 
         {/* Headline */}
         <h1 className="text-4xl md:text-6xl font-semibold tracking-tight mb-6 text-white leading-tight">
-          Smart Terminal for
+          AI-Powered Terminal
           <br />
-          <span className="gradient-text">Hardware & Server Dev</span>
+          <span className="gradient-text">That Understands You</span>
         </h1>
 
         {/* Subheadline */}
         <p className="text-lg md:text-xl text-white/50 mb-10 max-w-2xl mx-auto leading-relaxed">
-          Serial ports. SSH servers. AI-powered commands. All offline.
+          AI-powered serial & SSH terminal. Ask your datasheets. Debug faster.
         </p>
 
         {/* CTAs */}
@@ -46,7 +46,7 @@ export function Hero() {
 
         {/* Trust line */}
         <p className="text-white/40 text-sm">
-          No cloud. No API keys. Your data stays on your machine.
+          Your proprietary code never leaves your machine. No API keys. No subscriptions.
         </p>
 
         {/* Terminal Preview */}
@@ -65,11 +65,10 @@ export function Hero() {
 
             {/* Terminal Content - Magic Input Demo */}
             <div className="p-6 font-mono text-sm text-left min-h-[200px]">
-              <div className="text-white/60">&gt; Device ready</div>
-              <div className="text-white/60">&gt; Waiting for command...</div>
-              <div className="mt-4 flex items-center gap-2">
+              <div className="text-white/60">root@imx8mp:~# </div>
+              <div className="mt-3 flex items-center gap-2">
                 <span className="text-cyan-400">@</span>
-                <span className="text-white/80">&quot;read temperature from sensor&quot;</span>
+                <span className="text-white/80">&quot;turn on the status LED&quot;</span>
               </div>
               <div className="mt-3 p-3 rounded-lg bg-white/5 border border-emerald-500/20">
                 <div className="text-emerald-400 text-xs mb-2 flex items-center gap-1.5">
@@ -78,8 +77,13 @@ export function Hero() {
                   </svg>
                   Suggested command:
                 </div>
-                <div className="text-white font-medium">AT+TEMP?</div>
-                <div className="text-white/40 text-xs mt-1">Query temperature register</div>
+                <div className="text-white font-medium">echo 1 &gt; /sys/class/gpio/gpio147/value</div>
+                <div className="text-white/40 text-xs mt-1 flex items-center gap-1.5">
+                  <svg className="w-3 h-3 text-cyan-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
+                  </svg>
+                  <span>GPIO5_IO19 (pin 147) is STATUS_LED — from your datasheet</span>
+                </div>
               </div>
               <div className="mt-3 flex items-center gap-2 text-xs">
                 <span className="px-2 py-1 rounded bg-white/10 text-white/60">↵ Insert</span>

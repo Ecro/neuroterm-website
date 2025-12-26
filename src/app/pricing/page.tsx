@@ -44,7 +44,7 @@ export default function PricingPage() {
             </thead>
             <tbody className="text-sm">
               <tr className="border-b border-white/5">
-                <td className="p-5 text-white/60">Serial sessions</td>
+                <td className="p-5 text-white/60">Terminal sessions</td>
                 <td className="p-5 text-center text-white/80">1</td>
                 <td className="p-5 text-center text-white/80 bg-emerald-500/5">Unlimited</td>
               </tr>
@@ -157,6 +157,27 @@ export default function PricingPage() {
               <h3 className="text-white font-medium mb-2">Windows only?</h3>
               <p className="text-white/50 text-sm leading-relaxed">
                 For now, yes. macOS and Linux are on the roadmap.
+              </p>
+            </div>
+
+            <div className="p-5 rounded-xl border border-white/5 bg-white/[0.02]">
+              <h3 className="text-white font-medium mb-2">How fast is the AI?</h3>
+              <p className="text-white/50 text-sm leading-relaxed">
+                Streaming responses start instantly. GPU-accelerated terminal handles any baud rate smoothly.
+              </p>
+            </div>
+
+            <div className="p-5 rounded-xl border border-white/5 bg-white/[0.02]">
+              <h3 className="text-white font-medium mb-2">Can I use it air-gapped?</h3>
+              <p className="text-white/50 text-sm leading-relaxed">
+                Yes. Ollama runs 100% locally. No internet required after initial setup.
+              </p>
+            </div>
+
+            <div className="p-5 rounded-xl border border-white/5 bg-white/[0.02]">
+              <h3 className="text-white font-medium mb-2">Does SSH support key authentication?</h3>
+              <p className="text-white/50 text-sm leading-relaxed">
+                Yes. Both password and SSH key authentication are supported, with known hosts verification.
               </p>
             </div>
           </div>

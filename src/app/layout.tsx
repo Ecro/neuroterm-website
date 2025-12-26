@@ -15,20 +15,20 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'NeuroTerm - Serial Terminal for Windows',
-  description: 'GPU-accelerated serial terminal with local Ollama integration. Describe commands in plain English. Windows 10/11.',
-  keywords: ['serial terminal', 'embedded development', 'terminal', 'Ollama', 'Windows', 'Tauri'],
+  title: 'NeuroTerm - AI-Powered Serial & SSH Terminal',
+  description: 'The terminal that understands you. Describe what you want, AI gives you the command. Serial, SSH, SFTP. 100% offline.',
+  keywords: ['serial terminal', 'SSH terminal', 'SFTP', 'embedded Linux', 'MCU debugging', 'Ollama', 'Windows', 'Tauri', 'embedded development', 'IoT'],
   openGraph: {
-    title: 'NeuroTerm - Serial Terminal for Windows',
-    description: 'GPU-accelerated serial terminal with local Ollama integration. Your data stays local.',
+    title: 'NeuroTerm - AI-Powered Serial & SSH Terminal',
+    description: 'The terminal that understands you. Describe what you want, AI gives you the command. 100% offline.',
     url: 'https://neuroterm.dev',
     siteName: 'NeuroTerm',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'NeuroTerm - Serial Terminal for Windows',
-    description: 'GPU-accelerated serial terminal with local Ollama integration. Your data stays local.',
+    title: 'NeuroTerm - AI-Powered Serial & SSH Terminal',
+    description: 'The terminal that understands you. Describe what you want, AI gives you the command. 100% offline.',
   },
 };
 

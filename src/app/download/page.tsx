@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Download - NeuroTerm',
-  description: 'Download NeuroTerm for Windows. GPU-accelerated serial terminal with local AI.',
+  description: 'Download NeuroTerm for Windows. AI-powered serial & SSH terminal with SFTP. 100% offline.',
 };
 
 export default function DownloadPage() {
@@ -29,7 +29,7 @@ export default function DownloadPage() {
             </div>
             <div>
               <h2 className="text-xl font-semibold text-white">NeuroTerm for Windows</h2>
-              <p className="text-white/40 text-sm">Version 0.4.0</p>
+              <p className="text-white/40 text-sm">Version 2.1.0</p>
             </div>
           </div>
 
