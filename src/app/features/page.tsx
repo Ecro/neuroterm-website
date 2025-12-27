@@ -149,14 +149,20 @@ const featureGroups = [
 
 export default function FeaturesPage() {
   return (
-    <div className="min-h-screen pt-24 pb-16">
-      <div className="max-w-6xl mx-auto px-6">
+    <div className="min-h-screen pt-24 pb-16 relative overflow-hidden">
+      {/* Background effects */}
+      <div className="absolute inset-0 bg-[#09090b]" />
+      <div className="absolute inset-0 grid-bg opacity-30" />
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[600px] bg-gradient-to-br from-emerald-500/15 via-transparent to-cyan-500/10 rounded-full blur-3xl" />
+      <div className="absolute top-1/3 right-0 w-[400px] h-[400px] bg-gradient-to-tl from-cyan-500/10 to-transparent rounded-full blur-3xl" />
+
+      <div className="relative z-10 max-w-6xl mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-20">
           <h1 className="text-4xl md:text-5xl font-semibold text-white mb-4 tracking-tight">
-            Everything you need. Nothing you don&apos;t.
+            Everything you need. <span className="gradient-text">Nothing you don&apos;t.</span>
           </h1>
-          <p className="text-zinc-400 text-lg max-w-2xl mx-auto">
+          <p className="text-white/50 text-lg max-w-2xl mx-auto">
             Professional-grade features for embedded Linux, MCU, and IoT development.
             All powered by local AI.
           </p>

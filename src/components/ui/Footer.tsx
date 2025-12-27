@@ -25,6 +25,9 @@ export function Footer() {
             <Link href="/support" className="text-zinc-500 hover:text-white transition-colors">
               Support
             </Link>
+            <Link href="/terms" className="text-zinc-500 hover:text-white transition-colors">
+              License
+            </Link>
           </div>
         </div>
       </div>

@@ -8,14 +8,19 @@ export const metadata: Metadata = {
 
 export default function SupportPage() {
   return (
-    <div className="min-h-screen pt-24 pb-16">
-      <div className="max-w-3xl mx-auto px-6">
+    <div className="min-h-screen pt-24 pb-16 relative overflow-hidden">
+      {/* Background effects */}
+      <div className="absolute inset-0 bg-[#09090b]" />
+      <div className="absolute inset-0 grid-bg opacity-30" />
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[500px] bg-gradient-to-br from-cyan-500/15 via-transparent to-emerald-500/10 rounded-full blur-3xl" />
+
+      <div className="relative z-10 max-w-3xl mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-12">
           <h1 className="text-4xl md:text-5xl font-semibold text-white mb-4 tracking-tight">
-            Support
+            Get <span className="gradient-text">Support</span>
           </h1>
-          <p className="text-zinc-400 text-lg">
+          <p className="text-white/50 text-lg">
             We&apos;re here to help. Choose the best way to reach us.
           </p>
         </div>

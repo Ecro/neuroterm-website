@@ -7,14 +7,19 @@ export const metadata: Metadata = {
 
 export default function DownloadPage() {
   return (
-    <div className="min-h-screen pt-24 pb-16">
-      <div className="max-w-2xl mx-auto px-6">
+    <div className="min-h-screen pt-24 pb-16 relative overflow-hidden">
+      {/* Background effects */}
+      <div className="absolute inset-0 bg-[#09090b]" />
+      <div className="absolute inset-0 grid-bg opacity-30" />
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[500px] bg-gradient-to-br from-emerald-500/15 via-transparent to-cyan-500/10 rounded-full blur-3xl" />
+
+      <div className="relative z-10 max-w-2xl mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-12">
           <h1 className="text-4xl md:text-5xl font-semibold text-white mb-4 tracking-tight">
-            Download NeuroTerm
+            Download <span className="gradient-text">NeuroTerm</span>
           </h1>
-          <p className="text-zinc-400 text-lg">
+          <p className="text-white/50 text-lg">
             Free to use. No account required.
           </p>
         </div>
